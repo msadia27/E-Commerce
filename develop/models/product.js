@@ -28,14 +28,14 @@ Product.init(
       },
     },
     stock: {
-      type: DateTypes.DECIMAL,
+      type: DataTypes.DECIMAL,
       allowNull: false,
       validate: {
         isDecimal: true,
       },
     },
     category_id: {
-      type: DateTypes.INTEGER,
+      type: DataTypes.INTEGER,
       references: {
         model: "category",
         key: "id",
